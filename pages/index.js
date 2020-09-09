@@ -18,7 +18,7 @@ const Index = () => {
 
     setMovieId('')
 
-    axios.get(`http://www.omdbapi.com/?apikey=cda2a2d3&s=${inputText}`)
+    axios.get(`https://www.omdbapi.com/?apikey=cda2a2d3&s=${inputText}`)
       .then(res => {
         if (res) {
           setSearchRes(res.data.Search)
@@ -37,7 +37,7 @@ const Index = () => {
   }
 
   const selectMovie = (id) => {
-    axios.get(`http://www.omdbapi.com/?apikey=cda2a2d3&i=${id}`)
+    axios.get(`https://www.omdbapi.com/?apikey=cda2a2d3&i=${id}`)
       .then(res => {
         setSingleResult(res.data)
         setMovieId(id)
