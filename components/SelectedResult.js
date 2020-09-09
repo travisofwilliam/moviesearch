@@ -1,11 +1,7 @@
 const SelectedResult = ({ data, back }) => {
   return (
-    <div style={{
-
-      alignItems: 'center'
-    }}>
-
-      <div className="jumbotron col-centered" style={{ alignItems: 'center' }}>
+    <div>
+      <div className="jumbotron">
         <img src={data.Poster} alt="" />
         <h1 className="display-4">{data.Title}</h1>
         <p className="lead">{data.Plot}</p>

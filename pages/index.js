@@ -51,7 +51,7 @@ const Index = () => {
   }
 
   return (
-    <div className='container text-center m-auto'>
+    <div className='container text-center'>
       <Head>
         <link rel="stylesheet" href="https://bootswatch.com/4/united/bootstrap.min.css" />
       </Head>

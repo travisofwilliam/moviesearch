@@ -1,6 +1,6 @@
 const SearchResult = ({ result, selectMovie }) => {
   return (
-    <div style={{ alignItems: 'center' }} onClick={(e) => {
+    <div onClick={(e) => {
       e.preventDefault()
       selectMovie(result.imdbID)
     }} className="card col-sm-3" style={{ width: '18rem' }}>
